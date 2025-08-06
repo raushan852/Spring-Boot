@@ -22,7 +22,7 @@ public class BootIocProj02WishMessageGeneratorAssignment1Application {
 		try(ConfigurableApplicationContext ctx= SpringApplication.run(BootIocProj02WishMessageGeneratorAssignment1Application.class, args);)
 		{
 			WishMessageGenerator generator= ctx.getBean("wmg", WishMessageGenerator.class);
-			String showMessage = generator.showMessage();
+			String showMessage = generator.showMessage("Raushan");
 			System.out.println(showMessage);
 		}
 		catch(Exception e)

@@ -12,14 +12,14 @@ public class SeasonFinder
 	@Autowired
 	private LocalDate ldate;
 	
-	public SeasonFinder(LocalDate ldate)
+	public SeasonFinder()
 	{
 		System.out.println("SeasonFinder: 0-param constructor");
-		this.ldate= ldate;
 	}
 	
 	public String findSeason()
 	{
+		System.out.println("SeasonFinder.findSeason()");
 		int month= ldate.getMonthValue();
 		if(month >= 3 && month <= 6)
 		{
